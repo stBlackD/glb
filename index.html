@@ -14,10 +14,10 @@
       </a-assets>
 
       <a-gltf-model src="#ar1" rotation="0 0 0"></a-gltf-model>
-      <a-entity position="0 0 4" movement-controls="acceleration: 2000; fly: true" >
-      <a-camera></a-camera>
+      <a-entity id="cameraRig" position="0 0 0.5" movement-controls="fly: true">
+      <a-camera id="camera" look-controls></a-camera>
       <a-entity vive-controls="hand: left"></a-entity>
-      <a-entity vive-controls="hand: right"></a-entity>
+      <a-entity laser-controls="hand: right"></a-entity>
     </a-entity>
     </a-scene>
   </body>
